@@ -29,7 +29,7 @@ Get current queue status.
 For now this is the only method that this module supports..Yes, that's very sad.. but this is a start!
 
 ```
-const torque = require('../build/Release/addon');
+const torque = require('pbstorque');
 console.log(torque.statque());
 
 ```
