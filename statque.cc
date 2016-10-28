@@ -69,8 +69,8 @@ struct batch_status
                     bool b = !strcmp("True", at->value);
                     Local<Boolean> value = Boolean::New(isolate, b);
                     q->Set(name, value);
-                } else if( !strcmp(at->name, ATTR_aclhost) ) {
-                    //host names
+                } else if( !strcmp(at->name, ATTR_acluser) || !strcmp(at->name, ATTR_aclhost) || !strcmp(at->name, ATTR_aclgroup) || !strcmp(at->name, ATTR_routedest) ) {
+                    //quote delimited strings
                     char *token = strtok(at->value, ",");
                     Local<Array> values = Array::New(isolate);
                     int i = 0;
