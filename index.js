@@ -1,2 +1,2 @@
 
-module.exports = require('../build/Release/addon');
+module.exports = require('./build/Release/addon');
