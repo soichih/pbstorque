@@ -1,10 +1,10 @@
 # PBS Torque
 
-> nodejs native binding for PBS Torque from adaptivecomputing
+nodejs native binding for PBS Torque from adaptivecomputing
 
 Disclaimer: I have no association to adaptivecomputing. I am mainly developing this for my own purpose, but please feel free to use this if you want to interface with your PBS cluster.
 
-For PBS torque, please see https://github.com/adaptivecomputing/torque/
+> For PBS torque, please see https://github.com/adaptivecomputing/torque/
 
 ## Dependencies
 
@@ -12,7 +12,7 @@ For PBS torque, please see https://github.com/adaptivecomputing/torque/
 * libtorque header files in /usr/local/include
 * boost (for hpc, try module load boost)
 
-## Compile
+## Build
 
 npm build
 
@@ -22,7 +22,11 @@ npm test
 
 ## Usage
 
-For now the only thing you can do is get queue status.. Yes, that's very sad.. but this is a start!
+### Queue Status
+
+Get current queue status.
+
+For now this is the only method that this module supports..Yes, that's very sad.. but this is a start!
 
 ```
 const torque = require('../build/Release/addon');
