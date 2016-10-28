@@ -1,0 +1,16 @@
+{
+  "name": "pbstorque",
+  "version": "1.0.0",
+  "description": "nodejs binding for PBS torque",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test",
+    "install": "node-gyp rebuild"
+  },
+  "author": "Soichi Hayashi <hayashis@iu.edu>",
+  "license": "ISC",
+  "gypfile": true
+}
