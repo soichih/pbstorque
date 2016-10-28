@@ -30,7 +30,7 @@ console.log(torque.statque());
 
 ```
 
-```json
+```
 { trinity: 
    { queue_type: 'Execution',
      max_queuable: 500,
