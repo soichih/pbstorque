@@ -109,8 +109,8 @@ struct batch_status
     }
 
     void init(Local<Object> exports) {
-        NODE_SET_METHOD(exports, "statque", statque);
+        NODE_SET_METHOD(exports, "queue", statque);
     }
 
-    NODE_MODULE(addon, init)
+    NODE_MODULE(qstat, init)
 }  

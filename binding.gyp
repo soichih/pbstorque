@@ -1,8 +1,8 @@
 {
   "targets": [
     {
-      "target_name": "addon",
-      "sources": [ "statque.cc" ],
+      "target_name": "qstat",
+      "sources": [ "qstat.cc" ],
       "include_dirs": [ "/usr/local/include" ],
       "libraries": [ '-ltorque' ]
     }

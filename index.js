@@ -1,2 +1,2 @@
 
-module.exports = require('./build/Release/addon');
+exports.qstat = require('./build/Release/qstat');

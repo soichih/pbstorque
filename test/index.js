@@ -1,1 +1,1 @@
-require('./statque');
+require('./qstat');

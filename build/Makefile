@@ -303,12 +303,12 @@ $(obj).$(TOOLSET)/%.o: $(obj)/%.s FORCE_DO_CMD
 
 ifeq ($(strip $(foreach prefix,$(NO_LOAD),\
     $(findstring $(join ^,$(prefix)),\
-                 $(join ^,addon.target.mk)))),)
-  include addon.target.mk
+                 $(join ^,qstat.target.mk)))),)
+  include qstat.target.mk
 endif
 
 quiet_cmd_regen_makefile = ACTION Regenerating $@
-cmd_regen_makefile = cd $(srcdir); /gpfs/hps/soft/rhel6/nodejs/4.6.0/lib/node_modules/node-gyp/gyp/gyp_main.py -fmake --ignore-environment "--toplevel-dir=." -I/gpfs/home/h/a/hayashis/Karst/git/node-torque/build/config.gypi -I/gpfs/hps/soft/rhel6/nodejs/4.6.0/lib/node_modules/node-gyp/addon.gypi -I/N/u/hayashis/Karst/.node-gyp/4.6.0/include/node/common.gypi "--depth=." "-Goutput_dir=." "--generator-output=build" "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=/N/u/hayashis/Karst/.node-gyp/4.6.0" "-Dnode_gyp_dir=/gpfs/hps/soft/rhel6/nodejs/4.6.0/lib/node_modules/node-gyp" "-Dnode_lib_file=node.lib" "-Dmodule_root_dir=/gpfs/home/h/a/hayashis/Karst/git/node-torque" binding.gyp
+cmd_regen_makefile = cd $(srcdir); /gpfs/hps/soft/rhel6/nodejs/4.6.0/lib/node_modules/node-gyp/gyp/gyp_main.py -fmake --ignore-environment "--toplevel-dir=." -I/gpfs/home/h/a/hayashis/Karst/git/node-pbstorque/build/config.gypi -I/gpfs/hps/soft/rhel6/nodejs/4.6.0/lib/node_modules/node-gyp/addon.gypi -I/N/u/hayashis/Karst/.node-gyp/4.6.0/include/node/common.gypi "--depth=." "-Goutput_dir=." "--generator-output=build" "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=/N/u/hayashis/Karst/.node-gyp/4.6.0" "-Dnode_gyp_dir=/gpfs/hps/soft/rhel6/nodejs/4.6.0/lib/node_modules/node-gyp" "-Dnode_lib_file=node.lib" "-Dmodule_root_dir=/gpfs/home/h/a/hayashis/Karst/git/node-pbstorque" binding.gyp
 Makefile: $(srcdir)/../../.node-gyp/4.6.0/include/node/common.gypi $(srcdir)/../../../../../../../hps/soft/rhel6/nodejs/4.6.0/lib/node_modules/node-gyp/addon.gypi $(srcdir)/build/config.gypi $(srcdir)/binding.gyp
 	$(call do_cmd,regen_makefile)
 

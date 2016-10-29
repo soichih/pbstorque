@@ -1,0 +1,1 @@
+cmd_Release/obj.target/qstat.node := g++ -shared -pthread -rdynamic -m64  -Wl,-soname=qstat.node -o Release/obj.target/qstat.node -Wl,--start-group Release/obj.target/qstat/qstat.o -Wl,--end-group -ltorque
