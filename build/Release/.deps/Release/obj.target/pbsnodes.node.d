@@ -1,0 +1,1 @@
+cmd_Release/obj.target/pbsnodes.node := g++ -shared -pthread -rdynamic -m64  -Wl,-soname=pbsnodes.node -o Release/obj.target/pbsnodes.node -Wl,--start-group Release/obj.target/pbsnodes/pbsnodes.o -Wl,--end-group -ltorque

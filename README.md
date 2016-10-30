@@ -22,9 +22,74 @@ npm test
 
 ## Usage
 
-### Queue Status
+### Node Status (pbsnodes)
 
-Get current queue status.
+Return current node status
+
+```
+const torque = require('pbstorque');
+console.log(torque.pbsnodes.all());
+```
+
+```json
+    ...
+    "c66.karst.uits.iu.edu": {
+        "state": "free",
+        "np": 16,
+        "properties": [
+            "sw24",
+            "racka2",
+            "chassis1",
+            "afs",
+            "dc2",
+            "dcwan"
+        ],
+        "ntype": "cluster",
+        "status": {
+            "rectime": "1477839142",
+            "varattr": "",
+            "jobs": "",
+            "state": "free",
+            "netload": "2186492276077",
+            "gres": "",
+            "loadave": "0.03",
+            "ncpus": "16",
+            "physmem": "32982152kb",
+            "availmem": "30442100kb",
+            "totmem": "32982152kb",
+            "idletime": "2234391",
+            "nusers": "0",
+            "nsessions": "0",
+            "uname": "Linux c66.karst.uits.iu.edu 2.6.32-642.4.2.el6.x86_64 #1 SMP Mon Aug 15 02:06:41 EDT 2016 x86_64",
+            "opsys": "linux"
+        },
+        "mom_service_port": 15002,
+        "mom_manager_port": 15003,
+        "jobs": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    ...
+```
+
+### Queue Status (qstat -q)
+
+Return current queue status.
 
 For now this is the only method that this module supports..Yes, that's very sad.. but this is a start!
 

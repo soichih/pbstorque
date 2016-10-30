@@ -303,6 +303,11 @@ $(obj).$(TOOLSET)/%.o: $(obj)/%.s FORCE_DO_CMD
 
 ifeq ($(strip $(foreach prefix,$(NO_LOAD),\
     $(findstring $(join ^,$(prefix)),\
+                 $(join ^,pbsnodes.target.mk)))),)
+  include pbsnodes.target.mk
+endif
+ifeq ($(strip $(foreach prefix,$(NO_LOAD),\
+    $(findstring $(join ^,$(prefix)),\
                  $(join ^,qstat.target.mk)))),)
   include qstat.target.mk
 endif
