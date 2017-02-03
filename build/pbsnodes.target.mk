@@ -34,10 +34,10 @@ CFLAGS_CC_Debug := \
 	-std=gnu++0x
 
 INCS_Debug := \
-	-I/N/u/hayashis/Karst/.node-gyp/4.6.0/include/node \
-	-I/N/u/hayashis/Karst/.node-gyp/4.6.0/src \
-	-I/N/u/hayashis/Karst/.node-gyp/4.6.0/deps/uv/include \
-	-I/N/u/hayashis/Karst/.node-gyp/4.6.0/deps/v8/include \
+	-I/N/u/hayashis/Karst/.node-gyp/6.9.4/include/node \
+	-I/N/u/hayashis/Karst/.node-gyp/6.9.4/src \
+	-I/N/u/hayashis/Karst/.node-gyp/6.9.4/deps/uv/include \
+	-I/N/u/hayashis/Karst/.node-gyp/6.9.4/deps/v8/include \
 	-I/usr/local/include
 
 DEFS_Release := \
@@ -58,8 +58,6 @@ CFLAGS_Release := \
 	-Wno-unused-parameter \
 	-m64 \
 	-O3 \
-	-ffunction-sections \
-	-fdata-sections \
 	-fno-omit-frame-pointer
 
 # Flags passed to only C files.
@@ -72,10 +70,10 @@ CFLAGS_CC_Release := \
 	-std=gnu++0x
 
 INCS_Release := \
-	-I/N/u/hayashis/Karst/.node-gyp/4.6.0/include/node \
-	-I/N/u/hayashis/Karst/.node-gyp/4.6.0/src \
-	-I/N/u/hayashis/Karst/.node-gyp/4.6.0/deps/uv/include \
-	-I/N/u/hayashis/Karst/.node-gyp/4.6.0/deps/v8/include \
+	-I/N/u/hayashis/Karst/.node-gyp/6.9.4/include/node \
+	-I/N/u/hayashis/Karst/.node-gyp/6.9.4/src \
+	-I/N/u/hayashis/Karst/.node-gyp/6.9.4/deps/uv/include \
+	-I/N/u/hayashis/Karst/.node-gyp/6.9.4/deps/v8/include \
 	-I/usr/local/include
 
 OBJS := \

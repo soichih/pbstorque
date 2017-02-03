@@ -8,13 +8,14 @@ Disclaimer: I have no association to adaptivecomputing. I am mainly developing t
 
 ## Dependencies
 
+* node-gyp (npm)
 * libtorque
 * libtorque header files in /usr/local/include
 * boost (for hpc, try module load boost)
 
-## Build
+## Build node/pbs binding
 
-npm build
+node-gyp build
 
 ## Test
 
